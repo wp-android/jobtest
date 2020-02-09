@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="15dp">
+    <LinearLayout
+        android:id="@+id/bj_image"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dorder"
+        >
+        <ImageView
+            android:id="@+id/imageTP"
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_weight="1"
+            android:src="@drawable/tptp"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:layout_gravity="center"
+                android:text="职务"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="分类"/>
+            <TextView
+                android:id="@+id/start_end"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00BCD4"
+                android:text="开始结束时间"/>
+
+            <TextView
+                android:id="@+id/descx"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="marquee"
+
+                android:text="项目简介"/>
+
+
+        <TextView
+            android:id="@+id/peopleNum"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#61E767"
+            android:text="人数"/>
+            <TextView
+                android:id="@+id/treatment"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="24dp"
+                android:textColor="#E21717"
+                android:text="价格"/>
+        <TextView
+            android:id="@+id/editdate"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="2019-10-24"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

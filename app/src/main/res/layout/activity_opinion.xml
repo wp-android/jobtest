@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E7E7"
+    tools:context=".activity.OpinionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginLeft="@dimen/y20"
+            android:layout_marginRight="@dimen/y20"
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y300"
+            android:gravity="left|top"
+            android:background="#ffffff"
+            android:hint="感谢提出建议"
+            />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y20"
+            android:background="#FFC107"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/edit1"/>
+    </RelativeLayout>
+</LinearLayout>

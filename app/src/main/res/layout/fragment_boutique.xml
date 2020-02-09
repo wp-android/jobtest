@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/touT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y20"
+            android:text="全部兼职"
+            android:textSize="24dp"/>
+        <LinearLayout
+            android:id="@+id/fenL"
+            android:layout_below="@id/touT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/leiX"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/quY"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+            </Spinner>
+            <Spinner
+                android:id="@+id/paiX"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+            </Spinner>
+        </LinearLayout>
+        <View
+            android:id="@+id/xianX"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/fenL"
+            android:background="#CFC8C8"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/xianX"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

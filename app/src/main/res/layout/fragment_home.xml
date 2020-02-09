@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/diyi"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/x400"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/aapp1"/>
+
+                    <TextView
+                        android:id="@+id/zi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/diyi"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/dier"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/x400"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/aapp2"
+                    />
+
+                    <TextView
+                        android:id="@+id/zi2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="附近兼职"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/dier"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/disan"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/x400"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/aapp3"
+                    />
+                    <TextView
+                        android:id="@+id/zi3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="短期兼职"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/disan"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/disi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="@dimen/x400"
+                    android:src="@drawable/aapp4"
+                    />
+
+                    <TextView
+                        android:id="@+id/zi4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="长期兼职"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/disi"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logoapp"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/qqq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x100"
+                        android:textSize="@dimen/x100"
+                        android:text="青岛宏运大酒店招工啦"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="青岛宏运大酒店招工啦"
+                        android:layout_marginLeft="@dimen/x100"
+                        android:layout_marginTop="@dimen/y15"
+                        android:textSize="@dimen/x100"
+                        android:layout_below="@id/qqq"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10">
+                <ImageView
+                    android:id="@+id/ys1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ys"/>
+                <TextView
+                    android:id="@+id/biaoT"
+                    android:layout_toRightOf="@+id/ys1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="全部兼职"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="模拟兼职"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tui_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

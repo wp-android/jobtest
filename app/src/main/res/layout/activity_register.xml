@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app"
+    tools:context=".activity.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:title="注册"
+        app:titleTextColor="#FAF8F8"
+        android:background="#0000BCD4"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/x200"
+        android:layout_marginTop="@dimen/y50"
+        android:layout_marginRight="@dimen/x200"
+        android:background="@drawable/login_back"
+        android:orientation="vertical">
+
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x250"
+            android:layout_marginTop="@dimen/y120"
+            android:layout_marginRight="@dimen/x250"
+            android:background="@drawable/edit_style_1">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/t13"/>
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y50"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image1"
+            android:layout_marginLeft="@dimen/x40"
+            android:hint="请输入手机号"
+            android:background="@null"
+            />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x250"
+            android:layout_marginRight="@dimen/x250"
+            android:layout_marginTop="@dimen/y40"
+            android:background="@drawable/edit_style_1">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            android:text="获取验证码"/>
+
+
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入验证码"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x250"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginRight="@dimen/x250"
+            android:background="@drawable/edit_style_1">
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/t12"/>
+
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y50"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/image2"
+                android:background="@null"
+                android:hint="请设置登录密码" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x250"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_marginRight="@dimen/x250"
+            android:background="@drawable/edit_style_1">
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/t12"/>
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y50"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image3"
+                android:layout_marginLeft="@dimen/x40"
+                android:hint="请确认登录密码"
+                android:background="@null"
+                />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x250"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_marginRight="@dimen/x250"
+            android:background="@drawable/edit_style_1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x200"
+                android:text="男"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:text="注册"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

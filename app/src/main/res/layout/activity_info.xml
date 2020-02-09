@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.InfoActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle1"
+        android:layout_width="@dimen/x800"
+        android:layout_height="@dimen/y200"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/t4"/>
+
+</RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#f5f5f5" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称："/>
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/text1"
+                android:layout_centerVertical="true"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别："/>
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/text2"
+                android:layout_centerVertical="true"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="年龄："/>
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/text3"
+                android:layout_centerVertical="true"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓名："/>
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/text4"
+                android:layout_centerVertical="true"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="生日："/>
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/text5"
+                android:layout_centerVertical="true"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#f5f5f5" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="修改" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle2"
+                android:layout_width="@dimen/x800"
+                android:layout_height="@dimen/y200"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/t4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circle2"
+                android:layout_centerHorizontal="true"
+                android:text="点击头像可编辑"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#f5f5f5" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="昵称："/>
+            <EditText
+                android:id="@+id/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text6"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别："/>
+            <EditText
+                android:id="@+id/edittext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text7"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="年龄："/>
+            <EditText
+                android:id="@+id/edittext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text8"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓名："/>
+            <EditText
+                android:id="@+id/edittext4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text9"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/y10"
+            android:background="#dcdcdc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100">
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="生日："/>
+            <EditText
+                android:id="@+id/edittext5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text10"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="猪猪猪"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#f5f5f5" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="保存"/>
+    </LinearLayout>
+</LinearLayout>
